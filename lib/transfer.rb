@@ -9,7 +9,7 @@ class Transfer
     @status = 'pending'
   end 
   
-  def valid?(acc1, acc2)
+  def valid?
     acc1.valid? && acc2.valid?
   end 
   
