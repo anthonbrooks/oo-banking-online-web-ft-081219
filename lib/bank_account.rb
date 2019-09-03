@@ -19,7 +19,7 @@ class BankAccount
   end 
   
   def valid?
-    return true if @balance > 0
+    @balance > 0 ? true : false 
   end 
   
   def close_account
