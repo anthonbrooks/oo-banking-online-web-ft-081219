@@ -14,7 +14,10 @@ class Transfer
   end 
   
   def execute_transaction
-    receiver.balance += amount if sender.balance >= amount
+    if valid?
+    sender.balance -= amount
+    receiver.balance += amount
+    
   end 
   
   def reverse_transfer
