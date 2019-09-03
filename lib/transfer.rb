@@ -10,7 +10,7 @@ class Transfer
   end 
   
   def valid?
-    acc1.valid? && acc2.valid?
+    account.valid? && account.valid?
   end 
   
   def execute_transaction
