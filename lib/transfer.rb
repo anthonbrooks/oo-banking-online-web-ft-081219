@@ -9,8 +9,8 @@ class Transfer
     @status = 'pending'
   end 
   
-  def valid?
-    
+  def valid?(acc1, acc2)
+    acc1.valid? && acc2.valid?
   end 
   
   def execute_transaction
