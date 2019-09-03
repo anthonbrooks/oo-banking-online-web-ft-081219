@@ -8,4 +8,20 @@ class BankAccount
     @status = 'open'
   end 
   
+  
+  def deposit(amout)
+    @balance += amout
+  end 
+  
+  def display_balance
+    @balance
+  end 
+  
+  def valid?
+    
+  end 
+  
+  def close_account
+    @status = 'closed'
+  end 
 end
