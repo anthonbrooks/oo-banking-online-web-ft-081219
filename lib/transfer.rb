@@ -14,7 +14,7 @@ class Transfer
   end 
   
   def execute_transaction
-    receiver.balance += sender.amount if sender.balance >= @amount
+    receiver.balance += amount if sender.balance >= @amount
   end 
   
   def reverse_transfer
